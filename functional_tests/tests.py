@@ -46,8 +46,8 @@ class NewVisitorTest(LiveServerTestCase):
         self.assertNotIn('make a fly', page_text)
 
         inputbox = self.browser.find_element_by_id('id_new_item')
-        input.send_keys('Buy milk')
-        input.send_keys(Keys. ENTER)
+        inputbox.send_keys('Buy milk')
+        inputbox.send_keys(Keys. ENTER)
 
         y_list_url = self.browser.current_url
         self.assertRegex(y_list_url, '.lists/.+')
