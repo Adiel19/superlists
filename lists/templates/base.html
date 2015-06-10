@@ -11,19 +11,22 @@
 	</head>
 <body>
 <div class="container">
-
+	<div class="im-centered">
   <div class="row">
     <div class="col-md-6 col-md-offset-3 jumbotron">
       <div class="text-center">
         <h1>{% block header_text %}{% endblock %}</h1>
-        <form method="POST" action="{% block form_action %}{% endblock %}">
-          <input name="item_text" id="id_new_item" class="form-control input-lg" placeholder="Enter a to-do item"/>
+        <form class = "navbar-form navbar-center" method="POST" action="{% block form_action %}{% endblock %}">
+					<div>
+						<input class ="form-control" name="item_text" id="id_new_item" class="form-control input-lg" placeholder="Enter a to-do item"/>
                     {% csrf_token %}
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>
   </div>
-
+	</div>
   <div class="row">
 		<div class="col-md-6 col-md-offset-3">
       {% block table %}

@@ -1,3 +1,21 @@
 #id_new_item{
 	margin-top: 2ex;
 }
+body{
+	background-color: #121758;
+}
+body div.col-md-6{
+	background-color: #46abc5;
+	color: #1f183c;
+	min-height: 0px;
+}
+.im-centered{
+	margin:auto;
+	max-width: 100%;
+}
+.btn{
+	background-color: #241549;
+}
+.row{
+	margin-top:15%;
+}
